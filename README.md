@@ -24,3 +24,5 @@ $ rye run dev
 # or
 $ rye run vol
 ```
+
+![Screenshot](docs/img/audio_input.png)

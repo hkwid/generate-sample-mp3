@@ -1,0 +1,31 @@
+[project]
+name = "generate-sample-mp3"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "hkawaida", email = "hrnr.kwid@gmail.com" }
+]
+dependencies = [
+    "pydub>=0.25.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+python_version = "3.11.11"
+
+[tool.rye.scripts]
+main = "python src/generate_sample_mp3/main.py"
+vol = "python src/generate_sample_mp3/volume.py"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/generate_sample_mp3"]
+

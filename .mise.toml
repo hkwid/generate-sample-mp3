@@ -1,0 +1,3 @@
+[tools]
+rye = "latest"
+python = "3.11"
